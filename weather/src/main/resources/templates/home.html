@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<style>
+	
+	a {
+		font-size: 60px;
+		position: absolute;
+  		top: 50%;
+  		left: 50%;
+ 		transform: translate(-50%, -50%);
+ 		-webkit-text-fill-color: white; /* Will override color (regardless of order) */
+ 		-webkit-text-stroke-width: 2px;
+ 		-webkit-text-stroke-color: black;
+	}
+	
+	body{
+	background-image: url(https://www.almanac.com/sites/default/files/image_nodes/rainbow-weather.jpg);
+	}
+</style>
+
+<a th:text="${weather}"></a>
+
+</html>
